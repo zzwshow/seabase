@@ -1,0 +1,27 @@
+# 服务基本配置
+server:
+  runMode: debug
+  port: 8000
+  readTimeout: 60
+  writeTimeout: 60
+  jwtSecret: MDdAEwx7Cs
+  jwtExpire: 24   # 单位: 小时
+  prefixUrl: http://127.0.0.1:8000
+  dbSecret: LGlVCvQhD6evGBa8  #必须是16位、24位、32位其中一种！
+
+# 数据库配置
+database:
+  dbType: mysql
+  connStr: root:Qq1234567@tcp(127.0.0.1:3306)/seabase?charset=utf8&parseTime=True&loc=Local
+  debug: true
+
+
+# redis 配置
+redis:
+  host: 127.0.0.1
+  port: 6379
+  password:
+  db: 1
+  maxIdle: 30
+  maxActive: 30
+  idleTimeout: 200
